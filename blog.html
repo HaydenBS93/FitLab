@@ -8,44 +8,64 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
     />
+    <link rel="stylesheet" href="src/dark-mode.css" id="dark-mode-stylesheet" />
+    <link rel="stylesheet" href="src/index.css" />
   </head>
   <body class="font-sans bg-gray-100">
-    <header class="bg-blue-400">
+    <header class="bg-black border-b border-b-white sticky top-0 z-50">
       <nav
         class="max-w-7xl mx-auto flex flex-col justify-between items-center p-6 md:flex-row"
       >
+        <div>
+          <a href="/index.html">
+            <img
+              src="/images/FitLab.png"
+              class="w-12 h-12 rounded-full object-contain"
+            />
+          </a>
+        </div>
         <div class="flex items-center">
           <a
-            href="/index.html"
-            class="py-1 px-3 text-lg font-semibold text-gray-900 rounded-xl hover:text-white hover:bg-blue-500"
-            >Home</a
+            href="/products.html"
+            class="py-1 px-3 text-yellow-300 text-lg rounded-xl hover:bg-white hover:text-yellow-500"
+            >FitLab Products</a
           >
         </div>
         <div class="flex-1 items-center mb-4 md:mb-0">
           <a
             href="/about.html"
-            class="py-1 px-3 text-lg font-semibold text-gray-900 rounded-xl hover:text-white hover:bg-blue-500"
-            >About Me</a
+            class="py-1 px-3 text-yellow-300 text-lg rounded-xl hover:bg-white hover:text-yellow-500"
+            >About</a
           >
           <a
             href="/blog.html"
-            class="py-1 px-3 text-lg font-semibold text-gray-900 rounded-xl hover:text-white hover:bg-blue-500"
+            class="py-1 px-3 text-yellow-300 text-lg rounded-xl hover:bg-white hover:text-yellow-500"
             >Blog</a
           >
           <a
             href="/contact.html"
-            class="py-1 px-3 text-lg font-semibold text-gray-900 rounded-xl hover:text-white hover:bg-blue-500"
+            class="py-1 px-3 text-yellow-300 text-lg rounded-xl hover:bg-white hover:text-yellow-500"
             >Contact</a
           >
         </div>
         <div class="flex flex-1 justify-center items-center md:justify-end">
           <a
             href="#"
-            class="hidden md:block py-1 px-3 text-lg font-semibold text-gray-900 rounded-xl hover:text-white hover:bg-blue-500"
+            class="hidden md:block py-1 px-3 text-yellow-400 rounded-xl hover:bg-white hover:text-yellow-500"
             >Sign up to my newsletter here!</a
           >
         </div>
+        <div>
+          <button
+            id="dark-mode-toggle"
+            class="py-1 px-3 text-white rounded-xl hover:bg-yellow-400"
+          >
+            <span class="light-mode-icon rounded-full">🌞</span>
+            <span class="dark-mode-icon hidden rounded-full">🌙</span>
+          </button>
+        </div>
       </nav>
     </header>
+    <script src="dark-mode.js"></script>
   </body>
 </html>
