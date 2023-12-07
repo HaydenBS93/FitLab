@@ -19,34 +19,55 @@
       >
         <a
           href="/index.html"
-          class="py-1 px-2 text-yellow-400 text-lg rounded-lg hover:bg-white hover:text-yellow-500"
+          class="py-1 px-2 text-yellow-300 text-lg rounded-lg hover:bg-white hover:text-yellow-400"
         >
           Home
         </a>
-        <a
-          href="/products.html"
-          class="py-1 px-2 text-yellow-400 text-lg rounded-lg hover:bg-white hover:text-yellow-500"
-          >FitLab Products</a
-        >
+        <div class="relative group">
+          <a
+            href="/products/index.html"
+            class="py-1 px-2 text-yellow-300 text-lg rounded-lg hover:bg-white hover:text-yellow-400"
+            >FitLab Products</a
+          >
+          <div
+            class="absolute hidden bg-black border-2 border-yellow-400 space-y-1 w-40 rounded-lg"
+          >
+            <a
+              href="/products/clothing.html"
+              class="block py-2 px-4 text-yellow-300 hover:text-white hover:bg-yellow-500"
+              >Clothing</a
+            >
+            <a
+              href="/products/equipment.html"
+              class="block py-2 px-4 text-yellow-300 hover:text-white hover:bg-yellow-500"
+              >Equipment</a
+            >
+            <a
+              href="/products/supplements.html"
+              class="block py-2 px-4 text-yellow-300 hover:text-white hover:bg-yellow-500"
+              >Supplements</a
+            >
+          </div>
+        </div>
         <a
           href="/about.html"
-          class="py-1 px-2 text-yellow-400 text-lg rounded-lg hover:bg-white hover:text-yellow-500"
+          class="py-1 px-2 text-yellow-300 text-lg rounded-lg hover:bg-white hover:text-yellow-400"
           >About</a
         >
         <a
           href="/blog.html"
-          class="py-1 px-2 text-yellow-400 text-lg rounded-lg hover:bg-white hover:text-yellow-500"
+          class="py-1 px-2 text-yellow-300 text-lg rounded-lg hover:bg-white hover:text-yellow-400"
           >Blog</a
         >
         <a
           href="/contact.html"
-          class="py-1 px-2 text-yellow-400 text-lg rounded-lg hover:bg-white hover:text-yellow-500"
+          class="py-1 px-2 text-yellow-300 text-lg rounded-lg hover:bg-white hover:text-yellow-400"
           >Contact</a
         >
         <div class="flex flex-1 justify-center items-center md:justify-end">
           <a
             href="#"
-            class="md:block py-1 px-2 text-yellow-400 text-sm rounded-lg hover:bg-white hover:text-yellow-500"
+            class="md:block py-1 px-2 text-yellow-300 text-sm rounded-lg hover:bg-white hover:text-yellow-400"
             >Sign up to my newsletter here!</a
           >
         </div>
@@ -66,12 +87,15 @@
         <div class="max-w-7xl mx-auto px-6 md:pt-60">
           <div class="flex items-center gap-x-8">
             <div>
-              <h1 class="text-neutral-900 text-xl font-bold md:text-4xl">
-                Hello, I'm Hayden!
-              </h1>
-              <p class="mt-6 text-neutral-900 text-lg sm:max-w-md max-w-none">
+              <h1 class="text-xl font-bold md:text-4xl">Hello, I'm Hayden!</h1>
+              <p class="mt-6 text-lg sm:max-w-md max-w-none">
                 I am a CyberOps Engineer at THG: Securing the Digital Realm one
-                day at a time...
+                day at a time!
+              </p>
+              <p class="mt-8 text-lg sm:max-w-md max-w-none">
+                FitLab is one of my upcoming fitness companies which provide a
+                catalogue of products, ranging from clothing to equipment and
+                supplements
               </p>
             </div>
             <div
@@ -106,7 +130,7 @@
                 </div>
                 <div class="relative">
                   <img
-                    src="/images//aleksander-saks-4CzpHxVzTFA-unsplash.jpg"
+                    src="/images/aleksander-saks-4CzpHxVzTFA-unsplash.jpg"
                     alt=""
                     class="aspect-[2/3] w-full rounded-xl object-cover shadow-lg"
                   />
@@ -143,8 +167,10 @@
       </section>
       <section class="max-w-7xl mx-auto py-16 px-4 sm:px-6 sm:py-24 lg:px-8">
         <div class="sm:flex sm:items-baseline sm:justify-between">
-          <h2 class="text-yellow-400 text-2xl font-bold">
-            <a href="/products.html">
+          <h2
+            class="text-yellow-300 text-2xl font-bold hover:text-yellow-400 hover:underline"
+          >
+            <a href="/products/index.html">
               Browse Products
               <span>&rarr;</span>
             </a>
@@ -164,14 +190,17 @@
             <div class="absolute inset-0 flex items-end p-6">
               <div>
                 <h3 class="font-semibold text-white">
-                  <a href="/products.html" class="group-hover:text-gray-300">
+                  <a
+                    href="/products/clothing.html"
+                    class="group-hover:text-gray-300"
+                  >
                     <span class="absolute inset-0"></span>
                     Clothing
                   </a>
                 </h3>
                 <p aria-hidden="true" class="mt-1 text-white text-sm">
                   Shop now
-                  <span class="text-yellow-400">&rarr;</span>
+                  <span class="text-yellow-300">&rarr;</span>
                 </p>
               </div>
             </div>
@@ -191,14 +220,14 @@
             <div class="flex items-end p-6 sm:absolute sm:inset-0">
               <div>
                 <h3 class="text-white font-semibold">
-                  <a href="/products.html">
+                  <a href="/products/supplements.html">
                     <span class="absolute inset-0"></span>
                     Supplements
                   </a>
                 </h3>
                 <p aria-hidden="true" class="mt-1 text-white text-sm">
                   Shop now
-                  <span class="text-yellow-400">&rarr;</span>
+                  <span class="text-yellow-300">&rarr;</span>
                 </p>
               </div>
             </div>
@@ -217,14 +246,14 @@
             <div class="flex items-end p-6 sm:absolute sm:inset-0">
               <div>
                 <h3 class="text-white font-semibold">
-                  <a href="/products.html">
+                  <a href="/products/equipment.html">
                     <span class="absolute inset-0"></span>
                     Equipment
                   </a>
                 </h3>
                 <p aria-hidden="true" class="mt-1 text-white text-sm">
                   Shop now
-                  <span class="text-yellow-400">&rarr;</span>
+                  <span class="text-yellow-300">&rarr;</span>
                 </p>
               </div>
             </div>
@@ -260,7 +289,7 @@
             </div>
             <p class="mt-4 text-sm">
               We care about your data. Read our
-              <a href="#" class="text-yellow-400 font-semibold"
+              <a href="#" class="text-yellow-300 font-semibold"
                 >privacy&nbsp;policy</a
               >.
             </p>
@@ -278,34 +307,34 @@
         <div class="pb-6">
           <a
             href="#"
-            class="py-1 px-2 text-yellow-400 text-lg rounded-lg hover:bg-white hover:text-yellow-500"
+            class="py-1 px-2 text-yellow-300 text-lg rounded-lg hover:bg-white hover:text-yellow-400"
             >FitLab Products</a
           >
         </div>
         <div class="pb-6">
           <a
             href="#"
-            class="py-1 px-2 text-yellow-400 text-lg rounded-lg hover:bg-white hover:text-yellow-500"
+            class="py-1 px-2 text-yellow-300 text-lg rounded-lg hover:bg-white hover:text-yellow-400"
             >About</a
           >
         </div>
         <div class="pb-6">
           <a
             href="#"
-            class="py-1 px-2 text-yellow-400 text-lg rounded-lg hover:bg-white hover:text-yellow-500"
+            class="py-1 px-2 text-yellow-300 text-lg rounded-lg hover:bg-white hover:text-yellow-400"
             >Blog</a
           >
         </div>
         <div class="pb-6">
           <a
             href="#"
-            class="py-1 px-2 text-yellow-400 text-lg rounded-lg hover:bg-white hover:text-yellow-500"
+            class="py-1 px-2 text-yellow-300 text-lg rounded-lg hover:bg-white hover:text-yellow-400"
             >Contact</a
           >
         </div>
       </nav>
       <div class="mt-10 flex justify-center space-x-10">
-        <a href="#" class="text-yellow-400 rounded-lg hover:bg-white">
+        <a href="#" class="text-yellow-300 rounded-lg hover:bg-white">
           <span class="sr-only">Instagram</span>
           <svg
             class="h-8 w-8"
@@ -320,7 +349,7 @@
             />
           </svg>
         </a>
-        <a href="#" class="text-yellow-400 rounded-lg hover:bg-white">
+        <a href="#" class="text-yellow-300 rounded-lg hover:bg-white">
           <span class="sr-only">Twitter</span>
           <svg
             class="h-8 w-8"
@@ -333,7 +362,7 @@
             />
           </svg>
         </a>
-        <a href="#" class="text-yellow-400 rounded-lg hover:bg-white">
+        <a href="#" class="text-yellow-300 rounded-lg hover:bg-white">
           <span class="sr-only">GitHub</span>
           <svg
             class="h-8 w-8"
@@ -349,10 +378,11 @@
           </svg>
         </a>
       </div>
-      <p class="mt-10 text-center text-yellow-400 text-sm">
+      <p class="mt-10 text-center text-yellow-300 text-sm">
         &copy; 2023 FitLab, All rights reserved.
       </p>
     </footer>
     <script src="dark-mode.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
