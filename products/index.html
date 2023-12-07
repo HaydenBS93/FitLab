@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FitLab - Products</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+    <link rel="stylesheet" href="../dark-mode.css" id="dark-mode-stylesheet" />
+    <link rel="stylesheet" href="../src/index.css" />
+  </head>
+  <body class="font-sans bg-gray-100">
+    <header class="bg-black border-b border-b-white sticky top-0 z-50">
+      <nav
+        class="max-w-7xl mx-auto flex flex-col justify-between items-center p-6 space-x-4 md:flex-row"
+      >
+        <a
+          href="/index.html"
+          class="py-1 px-2 text-yellow-300 text-lg rounded-lg hover:bg-white hover:text-yellow-400"
+        >
+          Home
+        </a>
+        <div class="relative group">
+          <a
+            href="/products/index.html"
+            class="py-1 px-2 text-yellow-300 text-lg rounded-lg hover:bg-white hover:text-yellow-400"
+            >FitLab Products</a
+          >
+          <div
+            class="absolute hidden bg-black border-2 border-yellow-400 space-y-1 w-40 rounded-lg"
+          >
+            <a
+              href="/products/clothing.html"
+              class="block py-2 px-4 text-yellow-300 hover:text-white hover:bg-yellow-500"
+              >Clothing</a
+            >
+            <a
+              href="/products/equipment.html"
+              class="block py-2 px-4 text-yellow-300 hover:text-white hover:bg-yellow-500"
+              >Equipment</a
+            >
+            <a
+              href="/products/supplements.html"
+              class="block py-2 px-4 text-yellow-300 hover:text-white hover:bg-yellow-500"
+              >Supplements</a
+            >
+          </div>
+        </div>
+        <a
+          href="/about.html"
+          class="py-1 px-2 text-yellow-300 text-lg rounded-lg hover:bg-white hover:text-yellow-400"
+          >About</a
+        >
+        <a
+          href="/blog.html"
+          class="py-1 px-2 text-yellow-300 text-lg rounded-lg hover:bg-white hover:text-yellow-400"
+          >Blog</a
+        >
+        <a
+          href="/contact.html"
+          class="py-1 px-2 text-yellow-300 text-lg rounded-lg hover:bg-white hover:text-yellow-400"
+          >Contact</a
+        >
+        <div class="flex flex-1 justify-center items-center md:justify-end">
+          <a
+            href="#"
+            class="md:block py-1 px-2 text-yellow-300 text-sm rounded-lg hover:bg-white hover:text-yellow-400"
+            >Sign up to my newsletter here!</a
+          >
+        </div>
+        <div>
+          <button
+            id="dark-mode-toggle"
+            class="py-1 px-2 text-white rounded-xl hover:bg-white"
+          >
+            <span class="light-mode-icon rounded-full">🌞</span>
+            <span class="dark-mode-icon hidden rounded-full">🌙</span>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <script src="../dark-mode.js"></script>
+    <script src="../script.js"></script>
+  </body>
+</html>
