@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hayden Buckley-Smith</title>
+    <title>FitLab Blog</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
@@ -11,54 +11,69 @@
     <link rel="stylesheet" href="src/dark-mode.css" id="dark-mode-stylesheet" />
     <link rel="stylesheet" href="src/index.css" />
   </head>
-  <body class="font-sans bg-gray-100">
+  <body class="font-sans">
     <header class="bg-black border-b border-b-white sticky top-0 z-50">
       <nav
-        class="max-w-7xl mx-auto flex flex-col justify-between items-center p-6 md:flex-row"
+        class="max-w-7xl mx-auto flex flex-row justify-between items-center p-6 space-x-4"
       >
-        <div>
-          <a href="/index.html">
-            <img
-              src="/images/FitLab.png"
-              class="w-12 h-12 rounded-full object-contain"
-            />
-          </a>
-        </div>
-        <div class="flex items-center">
+        <a
+          href="/index.html"
+          class="py-1 px-2 text-yellow-300 text-lg rounded-lg hover:bg-white hover:text-yellow-400"
+        >
+          Home
+        </a>
+        <div class="relative group">
           <a
-            href="/products.html"
-            class="py-1 px-3 text-yellow-300 text-lg rounded-xl hover:bg-white hover:text-yellow-500"
+            href="/products/index.html"
+            class="py-1 px-2 text-yellow-300 text-lg rounded-lg hover:bg-white hover:text-yellow-400"
             >FitLab Products</a
           >
+          <div
+            class="absolute hidden bg-black border-2 border-yellow-400 space-y-1 w-40 rounded-lg"
+          >
+            <a
+              href="/products/clothing.html"
+              class="block py-2 px-4 text-yellow-300 hover:text-white hover:bg-yellow-500"
+              >Clothing</a
+            >
+            <a
+              href="/products/equipment.html"
+              class="block py-2 px-4 text-yellow-300 hover:text-white hover:bg-yellow-500"
+              >Equipment</a
+            >
+            <a
+              href="/products/supplements.html"
+              class="block py-2 px-4 text-yellow-300 hover:text-white hover:bg-yellow-500"
+              >Supplements</a
+            >
+          </div>
         </div>
-        <div class="flex-1 items-center mb-4 md:mb-0">
-          <a
-            href="/about.html"
-            class="py-1 px-3 text-yellow-300 text-lg rounded-xl hover:bg-white hover:text-yellow-500"
-            >About</a
-          >
-          <a
-            href="/blog.html"
-            class="py-1 px-3 text-yellow-300 text-lg rounded-xl hover:bg-white hover:text-yellow-500"
-            >Blog</a
-          >
-          <a
-            href="/contact.html"
-            class="py-1 px-3 text-yellow-300 text-lg rounded-xl hover:bg-white hover:text-yellow-500"
-            >Contact</a
-          >
-        </div>
+        <a
+          href="/about.html"
+          class="py-1 px-2 text-yellow-300 text-lg rounded-lg hover:bg-white hover:text-yellow-400"
+          >About</a
+        >
+        <a
+          href="/blog.html"
+          class="py-1 px-2 text-yellow-300 text-lg rounded-lg hover:bg-white hover:text-yellow-400"
+          >Blog</a
+        >
+        <a
+          href="/contact.html"
+          class="py-1 px-2 text-yellow-300 text-lg rounded-lg hover:bg-white hover:text-yellow-400"
+          >Contact</a
+        >
         <div class="flex flex-1 justify-center items-center md:justify-end">
           <a
             href="#"
-            class="hidden md:block py-1 px-3 text-yellow-400 rounded-xl hover:bg-white hover:text-yellow-500"
+            class="md:block py-1 px-2 text-yellow-300 text-sm rounded-lg hover:bg-white hover:text-yellow-400"
             >Sign up to my newsletter here!</a
           >
         </div>
         <div>
           <button
             id="dark-mode-toggle"
-            class="py-1 px-3 text-white rounded-xl hover:bg-yellow-400"
+            class="py-1 px-2 text-white rounded-xl hover:bg-white"
           >
             <span class="light-mode-icon rounded-full">🌞</span>
             <span class="dark-mode-icon hidden rounded-full">🌙</span>
@@ -66,6 +81,339 @@
         </div>
       </nav>
     </header>
+    <main class="px-6 py-16 lg:px-8 lg:py-24">
+      <div class="relative max-w-7xl mx-auto">
+        <div class="text-center">
+          <h2 class="text-3xl font-bold sm:text-4xl">Blog</h2>
+          <p class="mx-auto mt-3 max-w-2xl text-xl sm:mt-4">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa
+            libero labore natus atque, ducimus sed.
+          </p>
+        </div>
+        <div class="max-w-lg mt-12 grid gap-8 lg:max-w-none lg:grid-cols-3">
+          <div
+            class="flex flex-col overflow-hidden border-2 border-yellow-400 rounded-lg shadow-lg mx-auto sm:mx-0"
+          >
+            <div class="flex-shrink-0">
+              <img
+                class="h-48 w-full object-cover"
+                src="/images/element5-digital-LN3oVnuqaBk-unsplash.jpg"
+                alt=""
+              />
+            </div>
+            <div class="flex flex-1 flex-col justify-between p-6">
+              <div class="flex-1">
+                <p class="font-medium">
+                  <a href="#" class="text-yellow-300 hover:underline"
+                    >Fitness Challenge</a
+                  >
+                </p>
+                <a href="#" class="mt-2 block">
+                  <p class="text-xl font-semibold">
+                    Take on the 30-Day Fitness Challenge for a Healthier You
+                  </p>
+                  <p class="mt-3 text-base">
+                    Embark on a transformative journey with our 30-day fitness
+                    challenge. Discover a variety of workouts, nutritional tips,
+                    and motivational advice to help you achieve your fitness
+                    goals and improve your overall well-being.
+                  </p>
+                </a>
+              </div>
+              <div class="mt-6 flex items-center">
+                <div class="flex-shrink-0">
+                  <a href="#">
+                    <span class="sr-only">Fitness Enthusiast</span>
+                    <img
+                      class="h-10 w-10 rounded-full"
+                      src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="ml-3">
+                  <p class="text-sm font-medium">
+                    <a href="#" class="hover:underline">Fitness Enthusiast</a>
+                  </p>
+                  <div class="flex space-x-1 text-sm">
+                    <time datetime="2021-11-20">Nov 20, 2021</time>
+                    <span aria-hidden="true">&middot;</span>
+                    <span class="text-yellow-300">10 min read</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex flex-col overflow-hidden border-2 border-yellow-400 rounded-lg shadow-lg mx-auto sm:mx-0"
+          >
+            <div class="flex-shrink-0">
+              <img
+                class="h-48 w-full object-cover"
+                src="/images/chu-gummies-_EGNbWLR_Do-unsplash.jpg"
+                alt="Fitness Clothing"
+              />
+            </div>
+            <div class="flex flex-1 flex-col justify-between p-6">
+              <div class="flex-1">
+                <p class="-mfont-mediumfont-medium">
+                  <a href="#" class="text-yellow-300 hover:underline"
+                    >Style Inspiration</a
+                  >
+                </p>
+                <a href="#" class="mt-2 block">
+                  <p class="text-xl font-semibold">
+                    Elevate Your Workout Wardrobe: Latest Trends in Fitness
+                    Clothing
+                  </p>
+                  <p class="mt-3 text-base">
+                    Explore the intersection of comfort and style with our guide
+                    to the latest trends in fitness clothing. From sleek
+                    athleisure wear to high-performance activewear, discover the
+                    perfect blend of fashion and functionality to make your
+                    workouts both comfortable and chic.
+                  </p>
+                </a>
+              </div>
+              <div class="mt-6 flex items-center">
+                <div class="flex-shrink-0">
+                  <a href="#">
+                    <span class="sr-only">FitFashion Guru</span>
+                    <img
+                      class="h-10 w-10 rounded-full"
+                      src="https://images.unsplash.com/photo-1536333228986-14ae9980cc4e?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                      alt="FitFashion Guru"
+                    />
+                  </a>
+                </div>
+                <div class="ml-3">
+                  <p class="text-sm font-medium">
+                    <a href="#" class="hover:underline">FitFashion Guru</a>
+                  </p>
+                  <div class="flex space-x-1 text-sm">
+                    <time datetime="2022-01-20">Jan 20, 2022</time>
+                    <span aria-hidden="true">&middot;</span>
+                    <span class="text-yellow-300">9 min read</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex flex-col overflow-hidden border-2 border-yellow-400 rounded-lg shadow-lg mx-auto sm:mx-0"
+          >
+            <div class="flex-shrink-0">
+              <img
+                class="h-48 w-full object-cover"
+                src="/images/kristian-egelund-wmdcUQ0CJ4c-unsplash.jpg"
+                alt=""
+              />
+            </div>
+            <div class="flex flex-1 flex-col justify-between p-6">
+              <div class="flex-1">
+                <p class="-mfont-mediumfont-medium">
+                  <a href="#" class="text-yellow-300 hover:underline"
+                    >Fashion Spotlight</a
+                  >
+                </p>
+                <a href="#" class="mt-2 block">
+                  <p class="text-xl font-semibold">
+                    Elevate Your Workouts with Trendy Fitness Clothing
+                  </p>
+                  <p class="mt-3 text-base">
+                    Explore the latest trends in fitness clothing that not only
+                    provide comfort but also make a style statement. From
+                    breathable activewear to stylish athleisure, discover the
+                    perfect attire for your fitness journey.
+                  </p>
+                </a>
+              </div>
+              <div class="mt-6 flex items-center">
+                <div class="flex-shrink-0">
+                  <a href="#">
+                    <span class="sr-only">Sarah Johnson</span>
+                    <img
+                      class="h-10 w-10 rounded-full"
+                      src="https://images.unsplash.com/photo-1560807707-8cc77767d783?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="ml-3">
+                  <p class="text-sm font-medium">
+                    <a href="#" class="hover:underline">Sarah Johnson</a>
+                  </p>
+                  <div class="flex space-x-1 text-sm">
+                    <time datetime="2021-10-05">Oct 5, 2021</time>
+                    <span aria-hidden="true">&middot;</span>
+                    <span class="text-yellow-300">6 min read</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex flex-col overflow-hidden border-2 border-yellow-400 rounded-lg shadow-lg mx-auto sm:mx-0"
+          >
+            <div class="flex-shrink-0">
+              <img
+                class="h-48 w-full object-cover"
+                src="/images/humphrey-muleba-LOA2mTj1vhc-unsplash.jpg"
+                alt=""
+              />
+            </div>
+            <div class="flex flex-1 flex-col justify-between p-6">
+              <div class="flex-1">
+                <p class="font-medium">
+                  <a href="#" class="text-yellow-300 hover:underline"
+                    >Product Spotlight</a
+                  >
+                </p>
+                <a href="#" class="mt-2 block">
+                  <p class="text-xl font-semibold">
+                    Enhance Your Home Gym with the Latest Fitness Equipment
+                  </p>
+                  <p class="mt-3 text-base">
+                    Explore the top-notch fitness equipment to elevate your home
+                    workouts. From state-of-the-art treadmills to versatile
+                    dumbbell sets, discover the gear that suits your fitness
+                    goals.
+                  </p>
+                </a>
+              </div>
+              <div class="mt-6 flex items-center">
+                <div class="flex-shrink-0">
+                  <a href="#">
+                    <span class="sr-only">John Doe</span>
+                    <img
+                      class="h-10 w-10 rounded-full"
+                      src="https://images.unsplash.com/photo-1580498914523-77ec54c1798f?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="ml-3">
+                  <p class="text-sm font-medium">
+                    <a href="#" class="hover:underline">John Doe</a>
+                  </p>
+                  <div class="flex space-x-1 text-sm">
+                    <time datetime="2021-08-15">Aug 15, 2021</time>
+                    <span aria-hidden="true">&middot;</span>
+                    <span class="text-yellow-300">7 min read</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex flex-col overflow-hidden border-2 border-yellow-400 rounded-lg shadow-lg mx-auto sm:mx-0"
+          >
+            <div class="flex-shrink-0">
+              <img
+                class="h-48 w-full object-cover"
+                src="/images/aleksander-saks-7lQ1m08Z7eE-unsplash.jpg"
+                alt=""
+              />
+            </div>
+            <div class="flex flex-1 flex-col justify-between p-6">
+              <div class="flex-1">
+                <p class="font-medium">
+                  <a href="#" class="text-yellow-300 hover:underline"
+                    >Product Spotlight</a
+                  >
+                </p>
+                <a href="#" class="mt-2 block">
+                  <p class="text-xl font-semibold">
+                    Boost Your Fitness Journey with Premium Supplements
+                  </p>
+                  <p class="mt-3 text-base">
+                    Explore high-quality fitness supplements designed to enhance
+                    your performance and support your fitness goals. From
+                    protein powders to vitamins, discover the key supplements
+                    that can take your workouts to the next level.
+                  </p>
+                </a>
+              </div>
+              <div class="mt-6 flex items-center">
+                <div class="flex-shrink-0">
+                  <a href="#">
+                    <span class="sr-only">John Smith</span>
+                    <img
+                      class="h-10 w-10 rounded-full"
+                      src="https://images.unsplash.com/photo-1560807707-8cc77767d783?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="ml-3">
+                  <p class="text-sm font-medium">
+                    <a href="#" class="hover:underline">John Smith</a>
+                  </p>
+                  <div class="flex space-x-1 text-sm">
+                    <time datetime="2021-09-20">Sep 20, 2021</time>
+                    <span aria-hidden="true">&middot;</span>
+                    <span class="text-yellow-300">8 min read</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex flex-col overflow-hidden border-2 border-yellow-400 rounded-lg shadow-lg mx-auto sm:mx-0"
+          >
+            <div class="flex-shrink-0">
+              <img
+                class="h-48 w-full object-cover"
+                src="/images/gabin-vallet-J154nEkpzlQ-unsplash.jpg"
+                alt=""
+              />
+            </div>
+            <div class="flex flex-1 flex-col justify-between p-6">
+              <div class="flex-1">
+                <p class="-mfont-mediumfont-medium">
+                  <a href="#" class="text-yellow-300 hover:underline"
+                    >Fitness Tips</a
+                  >
+                </p>
+                <a href="#" class="mt-2 block">
+                  <p class="text-xl font-semibold">
+                    Enhance Your Workout Routine with HIIT
+                  </p>
+                  <p class="mt-3 text-base">
+                    Discover the benefits of High-Intensity Interval Training
+                    (HIIT) for a more effective and efficient workout. Burn
+                    calories, boost metabolism, and achieve your fitness goals.
+                  </p>
+                </a>
+              </div>
+              <div class="mt-6 flex items-center">
+                <div class="flex-shrink-0">
+                  <a href="#">
+                    <span class="sr-only">John Doe</span>
+                    <img
+                      class="h-10 w-10 rounded-full"
+                      src="https://images.unsplash.com/photo-1528758622342-4a90544ebe5f?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                      alt=""
+                    />
+                  </a>
+                </div>
+                <div class="ml-3">
+                  <p class="text-sm font-medium">
+                    <a href="#" class="hover:underline">John Doe</a>
+                  </p>
+                  <div class="flex space-x-1 text-sm">
+                    <time datetime="2021-05-20">May 20, 2021</time>
+                    <span aria-hidden="true">&middot;</span>
+                    <span class="text-yellow-300">8 min read</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <script src="dark-mode.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
