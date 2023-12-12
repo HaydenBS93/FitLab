@@ -11,3 +11,11 @@ body.dark-mode {
   background-color: #000000;
   color: #ffffff;
 }
+
+#statamic-logo {
+  filter: invert(1); /* Invert the colors initially (light mode) */
+}
+
+.dark-mode #statamic-logo {
+  filter: none; /* Remove the filter in dark mode */
+}
