@@ -17,7 +17,7 @@
         class="max-w-7xl mx-auto flex flex-row justify-between items-center p-6 space-x-4"
       >
         <a
-          href="/index.html"
+          href="/home.html"
           class="py-1 px-2 text-yellow-300 text-lg rounded-lg hover:bg-white hover:text-yellow-400"
         >
           Home
@@ -33,17 +33,17 @@
           >
             <a
               href="/products/clothing.html"
-              class="block py-2 px-4 text-yellow-300 hover:text-white hover:bg-yellow-500"
+              class="block py-2 px-4 text-yellow-300 hover:text-white hover:bg-yellow-400"
               >Clothing</a
             >
             <a
               href="/products/equipment.html"
-              class="block py-2 px-4 text-yellow-300 hover:text-white hover:bg-yellow-500"
+              class="block py-2 px-4 text-yellow-300 hover:text-white hover:bg-yellow-400"
               >Equipment</a
             >
             <a
               href="/products/supplements.html"
-              class="block py-2 px-4 text-yellow-300 hover:text-white hover:bg-yellow-500"
+              class="block py-2 px-4 text-yellow-300 hover:text-white hover:bg-yellow-400"
               >Supplements</a
             >
           </div>
@@ -65,11 +65,73 @@
         >
         <div class="flex flex-1 justify-center items-center md:justify-end">
           <a
+            id="openModal"
             href="#"
-            class="md:block py-1 px-2 text-yellow-300 text-md rounded-lg hover:bg-white hover:text-yellow-400"
-            >Sign up to my newsletter here!</a
+            class="md:block py-1 px-2 text-yellow-300 text-sm rounded-lg hover:bg-white hover:text-yellow-400"
+            >Sign up to my newsletter here! &rarr;</a
           >
         </div>
+        <div
+          id="newsletterModal"
+          class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center z-50 hidden"
+        >
+          <div class="modal bg-white p-8 rounded shadow-md w-96">
+            <h2 class="text-yellow-300 text-lg font-semibold mb-4">
+              Newsletter Sign-up
+            </h2>
+            <form id="signupForm" class="space-y-3">
+              <div>
+                <label class="text-yellow-300 font-semibold text-sm block"
+                  >Name</label
+                >
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your name"
+                  class="w-full p-2 border rounded text-black"
+                  required
+                />
+              </div>
+              <div>
+                <label class="text-yellow-300 font-bold text-sm block"
+                  >Email Address</label
+                >
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your email"
+                  class="w-full p-2 border rounded text-black"
+                  required
+                />
+              </div>
+              <div>
+                <label class="text-yellow-300 font-bold text-sm block"
+                  >Phone Number</label
+                >
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="Your phone number"
+                  class="w-full p-2 border rounded text-black"
+                  required
+                />
+              </div>
+              <button
+                type="submit"
+                class="py-2 px-4 bg-yellow-300 text-white text-sm rounded hover:bg-yellow-400"
+              >
+                Sign Up
+              </button>
+            </form>
+            <div id="successMessage" class="hidden mt-4 text-green-600">
+              Sign up successful! Thank you.
+            </div>
+            <button id="closeModal" class="mt-4 text-black text-sm">
+              Close
+            </button>
+          </div>
+        </div>
+
         <div>
           <button
             id="dark-mode-toggle"
@@ -239,7 +301,7 @@
           />
         </div>
         <!-- Values section -->
-        <div class="max-w-7xl mx-auto mt-32 px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto mt-32 py-8 px-6 lg:px-8">
           <div class="max-w-2xl mx-auto lg:mx-0">
             <h2 class="text-yellow-300 text-3xl font-bold md:text-4xl">
               Our values
@@ -315,76 +377,6 @@
               </dd>
             </div>
           </dl>
-        </div>
-        <div class="mt-16">
-          <div class="flex justify-center">
-            <svg class="h-[40rem] w-[80rem] flex-none" aria-hidden="true">
-              <defs>
-                <pattern
-                  id="e9033f3e-f665-41a6-84ef-756f6778e6fe"
-                  width="200"
-                  height="200"
-                  x="50%"
-                  y="50%"
-                  patternUnits="userSpaceOnUse"
-                  patternTransform="translate(-100 0)"
-                >
-                  <path d="M.5 200V.5H200" fill="none" />
-                </pattern>
-              </defs>
-            </svg>
-          </div>
-          <div class="max-w-7xl mx-auto px-6 lg:px-8">
-            <h2
-              class="text-yellow-300 text-center text-3xl font-semibold leading-8"
-            >
-              Trusted by the world’s most innovative teams
-            </h2>
-            <div
-              class="max-w-lg mx-auto mt-10 grid grid-cols-4 items-center gap-x-8 gap-y-10 md:max-w-xl md:grid-cols-6 md:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5"
-            >
-              <img
-                id="statamic-logo"
-                class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-                src="https://tailwindui.com/img/logos/158x48/transistor-logo-white.svg"
-                alt="Transistor"
-                width="158"
-                height="48"
-              />
-              <img
-                id="statamic-logo"
-                class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-                src="https://tailwindui.com/img/logos/158x48/reform-logo-white.svg"
-                alt="Reform"
-                width="158"
-                height="48"
-              />
-              <img
-                id="statamic-logo"
-                class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-                src="https://tailwindui.com/img/logos/158x48/tuple-logo-white.svg"
-                alt="Tuple"
-                width="158"
-                height="48"
-              />
-              <img
-                id="statamic-logo"
-                class="col-span-2 max-h-12 w-full object-contain md:col-start-2 lg:col-span-1"
-                src="https://tailwindui.com/img/logos/158x48/savvycal-logo-white.svg"
-                alt="SavvyCal"
-                width="158"
-                height="48"
-              />
-              <img
-                id="statamic-logo"
-                class="col-span-2 col-start-2 max-h-12 w-full object-contain md:col-start-auto lg:col-span-1"
-                src="https://tailwindui.com/img/logos/158x48/statamic-logo-white.svg"
-                alt="Statamic"
-                width="158"
-                height="48"
-              />
-            </div>
-          </div>
         </div>
       </main>
     </section>
