@@ -65,3 +65,28 @@ signupForm.addEventListener("submit", function (event) {
   successMessage.classList.remove("hidden");
   // You may want to perform additional actions here, like sending the form data to your server
 });
+
+// Cookie Banner
+
+document.addEventListener("DOMContentLoaded", function () {
+  var cookieBanner = document.getElementById("cookie-banner");
+  var acceptCookiesButton = document.getElementById("accept-cookies");
+  var rejectCookiesButton = document.getElementById("reject-cookies");
+
+  function hideCookieBanner() {
+    // Add a class to make the banner invisible
+    cookieBanner.classList.add("opacity-0");
+    // After the transition duration, remove the banner from the DOM
+    setTimeout(function () {
+      cookieBanner.style.display = "none";
+    }, 500); // 500 is the duration of the opacity transition
+  }
+
+  acceptCookiesButton.addEventListener("click", hideCookieBanner);
+  rejectCookiesButton.addEventListener("click", hideCookieBanner);
+
+  setTimeout(function () {
+    // Add a class to make the banner visible after 5 seconds
+    cookieBanner.classList.add("opacity-100");
+  }, 5000);
+});
