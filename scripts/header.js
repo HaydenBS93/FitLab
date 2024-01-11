@@ -5,7 +5,7 @@ header.innerHTML = `
 class="max-w-7xl mx-auto flex flex-col justify-between items-center p-6 space-x-4 md:flex-row"
 >
 <a
-  href="/home.html"
+  href="/index.html"
   class="py-1 px-2 text-yellow-300 text-lg rounded-lg hover:bg-white hover:text-yellow-400"
 >
   Home
