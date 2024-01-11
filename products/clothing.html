@@ -8,12 +8,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="../src/dark-mode.css"
-      id="dark-mode-stylesheet"
-    />
-    <link rel="stylesheet" href="../src/index.css" />
+    <link rel="stylesheet" href="/src/index.css" />
   </head>
   <body class="font-sans">
     <header class="bg-black border-b border-b-white sticky top-0 z-50">
@@ -21,7 +16,7 @@
         class="max-w-7xl mx-auto flex flex-row justify-between items-center p-6 space-x-4"
       >
         <a
-          href="/home.html"
+          href="/index.html"
           class="py-1 px-2 text-yellow-300 text-lg rounded-lg hover:bg-white hover:text-yellow-400"
         >
           Home
@@ -153,7 +148,7 @@
     <main>
       <div>
         <img
-          src="/images/fitness-banner.png"
+          src="/assets/images/fitness-banner.png"
           alt="aleksander saks"
           class="w-full h-auto object-cover"
         />
@@ -173,13 +168,13 @@
               class="aspect-h-4 aspect-w-3 md:aspect-none group-hover:opacity-75 md:h-96"
             >
               <img
-                src="../images/christina-moroz-CBHwsbwpTKA-unsplash.jpg"
+                src="/assets/images/christina-moroz-CBHwsbwpTKA-unsplash.jpg"
                 alt=""
                 class="h-full w-full object-cover object-center md:h-full md:w-full"
               />
             </div>
             <div class="flex flex-1 flex-col space-y-2 p-4">
-              <h3 class="text-sm font-medium text-yellow-300">
+              <h3 class="text-yellow-300 text-sm font-medium">
                 <a href="#">
                   <span aria-hidden="true" class="absolute inset-0"></span>
                   Dark Grey Women's Sleeveless Training Top
@@ -190,7 +185,7 @@
                 week, and an extra for laundry day.
               </p>
               <div class="flex flex-1 flex-col justify-end">
-                <p class="text-base font-medium text-yellow-300">£16</p>
+                <p class="text-yellow-300 text-base font-medium">£16</p>
               </div>
             </div>
           </div>
@@ -201,7 +196,7 @@
               class="aspect-h-4 aspect-w-3 md:aspect-none group-hover:opacity-75 md:h-96"
             >
               <img
-                src="../images/heather-ford-hthsAhksQ5M-unsplash.jpg"
+                src="/assets/images/heather-ford-hthsAhksQ5M-unsplash.jpg"
                 alt=""
                 class="h-full w-full object-cover object-center md:h-full md:w-full"
               />
@@ -229,7 +224,7 @@
               class="aspect-h-4 aspect-w-3 md:aspect-none group-hover:opacity-75 md:h-96"
             >
               <img
-                src="../images/gabin-vallet-XUn7yMZH2yg-unsplash.jpg"
+                src="/assets/images/gabin-vallet-XUn7yMZH2yg-unsplash.jpg"
                 alt=""
                 class="h-full w-full object-cover object-center md:h-full md:w-full"
               />
@@ -257,7 +252,7 @@
               class="aspect-h-4 aspect-w-3 md:aspect-none group-hover:opacity-75 md:h-96"
             >
               <img
-                src="../images/md-salman-tWOz2_EK5EQ-unsplash.jpg"
+                src="/assets/images/md-salman-tWOz2_EK5EQ-unsplash.jpg"
                 alt=""
                 class="h-full w-full object-cover object-center md:h-full md:w-full"
               />
@@ -285,7 +280,7 @@
               class="aspect-h-4 aspect-w-3 md:aspect-none group-hover:opacity-75 md:h-96"
             >
               <img
-                src="../images/han-wei-sheng-5Lp7PJONCFw-unsplash.jpg"
+                src="/assets/images/han-wei-sheng-5Lp7PJONCFw-unsplash.jpg"
                 alt=""
                 class="h-full w-full object-cover object-center md:h-full md:w-full"
               />
@@ -313,7 +308,7 @@
               class="aspect-h-4 aspect-w-3 md:aspect-none group-hover:opacity-75 md:h-96"
             >
               <img
-                src="../images/ryan-hoffman-AwV3LiHm-XM-unsplash.jpg"
+                src="/assets/images/ryan-hoffman-AwV3LiHm-XM-unsplash.jpg"
                 alt=""
                 class="h-full w-full object-cover object-center md:h-full md:w-full"
               />
@@ -341,7 +336,7 @@
               class="aspect-h-4 aspect-w-3 md:aspect-none group-hover:opacity-75 md:h-96"
             >
               <img
-                src="../images/hayley-kim-studios-eot-ka5dM7Q-unsplash.jpg"
+                src="/assets/images/hayley-kim-studios-eot-ka5dM7Q-unsplash.jpg"
                 alt=""
                 class="h-full w-full object-cover object-center md:h-full md:w-full"
               />
@@ -369,7 +364,7 @@
               class="aspect-h-4 aspect-w-3 md:aspect-none group-hover:opacity-75 md:h-96"
             >
               <img
-                src="../images/philip-myrtorp-oLt9TFuDnB4-unsplash.jpg"
+                src="/assets/images/philip-myrtorp-oLt9TFuDnB4-unsplash.jpg"
                 alt=""
                 class="h-full w-full object-cover object-center md:h-full md:w-full"
               />
@@ -397,7 +392,7 @@
               class="aspect-h-4 aspect-w-3 md:aspect-none group-hover:opacity-75 md:h-96"
             >
               <img
-                src="../images/gabriel-alenius-xfWsiueRkNo-unsplash.jpg"
+                src="/assets/images/gabriel-alenius-xfWsiueRkNo-unsplash.jpg"
                 alt=""
                 class="h-full w-full object-cover object-center md:h-full md:w-full"
               />
@@ -421,6 +416,15 @@
           </div>
         </div>
       </section>
+      <!-- Scroll -->
+      <button
+        onclick="topFunction()"
+        id="myBtn"
+        title="Go to top"
+        class="hidden fixed bottom-20 right-10 z-50 bg-yellow-300 hover:bg-yellow-400 font-bold py-2 px-4 rounded"
+      >
+        Top
+      </button>
     </main>
     <footer
       class="max-w-7xl mx-auto overflow-hidden py-20 px-6 md:py-24 lg:px-8"
@@ -510,8 +514,7 @@
         &copy; 2023 FitLab, All rights reserved.
       </p>
     </footer>
-
-    <script src="../script.js"></script>
-    <script src="../dark-mode.js"></script>
+    <script src="/scripts/script.js"></script>
+    <script src="/scripts/dark-mode.js"></script>
   </body>
 </html>

@@ -8,8 +8,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
     />
-    <link rel="stylesheet" href="../dark-mode.css" id="dark-mode-stylesheet" />
-    <link rel="stylesheet" href="../src/index.css" />
+    <link rel="stylesheet" href="/src/index.css" />
   </head>
   <body class="font-sans">
     <header class="bg-black border-b border-b-white sticky top-0 z-50">
@@ -17,7 +16,7 @@
         class="max-w-7xl mx-auto flex flex-row justify-between items-center p-6 space-x-4"
       >
         <a
-          href="/home.html"
+          href="/index.html"
           class="py-1 px-2 text-yellow-300 text-lg rounded-lg hover:bg-white hover:text-yellow-400"
         >
           Home
@@ -144,12 +143,13 @@
       </nav>
     </header>
     <main>
+      <!-- Hero -->
       <section class="relative py-32 px-6 md:py-40 md:px-12 lg:px-16">
         <div class="absolute inset-0 overflow-hidden">
           <img
             src="https://tailwindui.com/img/ecommerce-images/home-page-03-feature-section-full-width.jpg"
             alt=""
-            class="h-full w-full object-cover object-center"
+            class="object-cover object-center"
           />
         </div>
         <div
@@ -157,7 +157,7 @@
           class="absolute inset-0 bg-black bg-opacity-50"
         ></div>
         <div
-          class="relative max-w-3xl mx-auto flex flex-col items-center text-center text-white"
+          class="relative max-w-3xl mx-auto flex flex-col items-center text-center"
         >
           <h2 class="text-3xl font-bold md:text-4xl">FitLab Products Page</h2>
           <p class="mt-3 text-xl">
@@ -168,288 +168,434 @@
           </p>
           <a
             href="../about.html"
-            class="mt-8 block w-full rounded-md border border-transparent bg-yellow-300 py-3 px-8 font-medium hover:bg-yellow-400 md:w-auto"
+            class="mt-8 block w-full rounded-md border border-transparent bg-yellow-300 py-3 px-8 text-black font-medium hover:bg-yellow-400 md:w-auto"
             >Read our story</a
           >
         </div>
       </section>
+      <!-- Trending Products -->
       <section
-        class="max-w-2xl mx-auto py-16 px-4 md:py-24 lg:max-w-7xl lg:px-8"
+        class="max-w-2xl mx-auto px-4 py-24 md:px-6 md:py-32 lg:max-w-7xl lg:px-8"
       >
-        <h1 class="p-6 text-center text-4xl">Products</h1>
-
+        <div class="max-w-3xl">
+          <p class="mt-2 text-3xl font-bold text-yellow-300 md:text-4xl">
+            Trending Products
+          </p>
+          <p class="mt-4 text-lg">
+            Discover FitLab's latest in fitness essentials – top-notch gear,
+            supplements, and activewear. From cutting-edge equipment to stylish
+            clothing, elevate your fitness journey effortlessly with our curated
+            collection. Achieve your goals with innovation, functionality, and
+            style.
+          </p>
+        </div>
         <div
-          class="grid grid-cols-1 gap-y-4 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-3 lg:gap-x-8"
+          class="mt-10 grid grid-cols-1 items-start gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-x-8"
         >
-          <div
-            class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white"
-          >
-            <div
-              class="aspect-h-4 aspect-w-3 bg-gray-200 sm:aspect-none group-hover:opacity-75 sm:h-96"
-            >
-              <img
-                src="https://tailwindui.com/img/ecommerce-images/category-page-02-image-card-01.jpg"
-                alt="Eight shirts arranged on table in black, olive, grey, blue, white, red, mustard, and green."
-                class="h-full w-full object-cover object-center sm:h-full sm:w-full"
-              />
-            </div>
-            <div class="flex flex-1 flex-col space-y-2 p-4">
-              <h3 class="text-sm font-medium text-gray-900">
-                <a href="#">
-                  <span aria-hidden="true" class="absolute inset-0"></span>
-                  Basic Tee 8-Pack
-                </a>
+          <div class="flex flex-col-reverse">
+            <div class="mt-6">
+              <h3 class="text-yellow-300 text-lg font-medium">
+                Three card types
               </h3>
-              <p class="text-sm text-gray-500">
-                Get the full lineup of our Basic Tees. Have a fresh shirt all
-                week, and an extra for laundry day.
+              <p class="mt-2 text-base">
+                Today, Next, and Someday cards allow you to defer your dreams
+                into the future.
               </p>
-              <div class="flex flex-1 flex-col justify-end">
-                <p class="text-sm italic text-gray-500">8 colors</p>
-                <p class="text-base font-medium text-gray-900">$256</p>
-              </div>
+            </div>
+            <div class="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg">
+              <img
+                src="https://tailwindui.com/img/ecommerce-images/product-feature-08-detail-01.jpg"
+                alt="Green cardstock box containing white, beige, and brown cards."
+                class="object-cover object-center"
+              />
             </div>
           </div>
-          <div
-            class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white"
-          >
+          <div class="flex flex-col-reverse">
+            <div class="mt-6">
+              <h3 class="text-yellow-300 text-lg font-medium">
+                The perfect mix
+              </h3>
+              <p class="mt-2 text-base">
+                Each refill pack contains plenty of cards to last you a month of
+                procrastination.
+              </p>
+            </div>
             <div
-              class="aspect-h-4 aspect-w-3 bg-gray-200 sm:aspect-none group-hover:opacity-75 sm:h-96"
+              class="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gray-100"
             >
               <img
-                src="https://tailwindui.com/img/ecommerce-images/category-page-02-image-card-01.jpg"
-                alt="Eight shirts arranged on table in black, olive, grey, blue, white, red, mustard, and green."
-                class="h-full w-full object-cover object-center sm:h-full sm:w-full"
+                src="https://tailwindui.com/img/ecommerce-images/product-feature-08-detail-02.jpg"
+                alt="Green cardstock box open with 50 cards inside."
+                class="object-cover object-center"
               />
-            </div>
-            <div class="flex flex-1 flex-col space-y-2 p-4">
-              <h3 class="text-sm font-medium text-gray-900">
-                <a href="#">
-                  <span aria-hidden="true" class="absolute inset-0"></span>
-                  Basic Tee 8-Pack
-                </a>
-              </h3>
-              <p class="text-sm text-gray-500">
-                Get the full lineup of our Basic Tees. Have a fresh shirt all
-                week, and an extra for laundry day.
-              </p>
-              <div class="flex flex-1 flex-col justify-end">
-                <p class="text-sm italic text-gray-500">8 colors</p>
-                <p class="text-base font-medium text-gray-900">$256</p>
-              </div>
             </div>
           </div>
-          <div
-            class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white"
-          >
+          <div class="flex flex-col-reverse">
+            <div class="mt-6">
+              <h3 class="text-yellow-300 text-lg font-medium">
+                Dot grid backs
+              </h3>
+              <p class="mt-2 text-base">
+                Flip a card over to doodle during meetings when you should be
+                listening.
+              </p>
+            </div>
             <div
-              class="aspect-h-4 aspect-w-3 bg-gray-200 sm:aspect-none group-hover:opacity-75 sm:h-96"
+              class="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gray-100"
             >
               <img
-                src="https://tailwindui.com/img/ecommerce-images/category-page-02-image-card-01.jpg"
-                alt="Eight shirts arranged on table in black, olive, grey, blue, white, red, mustard, and green."
-                class="h-full w-full object-cover object-center sm:h-full sm:w-full"
+                src="https://tailwindui.com/img/ecommerce-images/product-feature-08-detail-03.jpg"
+                alt="Detail of white today card, beige next card, and brown someday card with dot grid."
+                class="object-cover object-center"
               />
-            </div>
-            <div class="flex flex-1 flex-col space-y-2 p-4">
-              <h3 class="text-sm font-medium text-gray-900">
-                <a href="#">
-                  <span aria-hidden="true" class="absolute inset-0"></span>
-                  Basic Tee 8-Pack
-                </a>
-              </h3>
-              <p class="text-sm text-gray-500">
-                Get the full lineup of our Basic Tees. Have a fresh shirt all
-                week, and an extra for laundry day.
-              </p>
-              <div class="flex flex-1 flex-col justify-end">
-                <p class="text-sm italic text-gray-500">8 colors</p>
-                <p class="text-base font-medium text-gray-900">$256</p>
-              </div>
-            </div>
-          </div>
-          <div
-            class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white"
-          >
-            <div
-              class="aspect-h-4 aspect-w-3 bg-gray-200 sm:aspect-none group-hover:opacity-75 sm:h-96"
-            >
-              <img
-                src="https://tailwindui.com/img/ecommerce-images/category-page-02-image-card-01.jpg"
-                alt="Eight shirts arranged on table in black, olive, grey, blue, white, red, mustard, and green."
-                class="h-full w-full object-cover object-center sm:h-full sm:w-full"
-              />
-            </div>
-            <div class="flex flex-1 flex-col space-y-2 p-4">
-              <h3 class="text-sm font-medium text-gray-900">
-                <a href="#">
-                  <span aria-hidden="true" class="absolute inset-0"></span>
-                  Basic Tee 8-Pack
-                </a>
-              </h3>
-              <p class="text-sm text-gray-500">
-                Get the full lineup of our Basic Tees. Have a fresh shirt all
-                week, and an extra for laundry day.
-              </p>
-              <div class="flex flex-1 flex-col justify-end">
-                <p class="text-sm italic text-gray-500">8 colors</p>
-                <p class="text-base font-medium text-gray-900">$256</p>
-              </div>
-            </div>
-          </div>
-          <div
-            class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white"
-          >
-            <div
-              class="aspect-h-4 aspect-w-3 bg-gray-200 sm:aspect-none group-hover:opacity-75 sm:h-96"
-            >
-              <img
-                src="https://tailwindui.com/img/ecommerce-images/category-page-02-image-card-01.jpg"
-                alt="Eight shirts arranged on table in black, olive, grey, blue, white, red, mustard, and green."
-                class="h-full w-full object-cover object-center sm:h-full sm:w-full"
-              />
-            </div>
-            <div class="flex flex-1 flex-col space-y-2 p-4">
-              <h3 class="text-sm font-medium text-gray-900">
-                <a href="#">
-                  <span aria-hidden="true" class="absolute inset-0"></span>
-                  Basic Tee 8-Pack
-                </a>
-              </h3>
-              <p class="text-sm text-gray-500">
-                Get the full lineup of our Basic Tees. Have a fresh shirt all
-                week, and an extra for laundry day.
-              </p>
-              <div class="flex flex-1 flex-col justify-end">
-                <p class="text-sm italic text-gray-500">8 colors</p>
-                <p class="text-base font-medium text-gray-900">$256</p>
-              </div>
-            </div>
-          </div>
-          <div
-            class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white"
-          >
-            <div
-              class="aspect-h-4 aspect-w-3 bg-gray-200 sm:aspect-none group-hover:opacity-75 sm:h-96"
-            >
-              <img
-                src="https://tailwindui.com/img/ecommerce-images/category-page-02-image-card-01.jpg"
-                alt="Eight shirts arranged on table in black, olive, grey, blue, white, red, mustard, and green."
-                class="h-full w-full object-cover object-center sm:h-full sm:w-full"
-              />
-            </div>
-            <div class="flex flex-1 flex-col space-y-2 p-4">
-              <h3 class="text-sm font-medium text-gray-900">
-                <a href="#">
-                  <span aria-hidden="true" class="absolute inset-0"></span>
-                  Basic Tee 8-Pack
-                </a>
-              </h3>
-              <p class="text-sm text-gray-500">
-                Get the full lineup of our Basic Tees. Have a fresh shirt all
-                week, and an extra for laundry day.
-              </p>
-              <div class="flex flex-1 flex-col justify-end">
-                <p class="text-sm italic text-gray-500">8 colors</p>
-                <p class="text-base font-medium text-gray-900">$256</p>
-              </div>
-            </div>
-          </div>
-          <div
-            class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white"
-          >
-            <div
-              class="aspect-h-4 aspect-w-3 bg-gray-200 sm:aspect-none group-hover:opacity-75 sm:h-96"
-            >
-              <img
-                src="https://tailwindui.com/img/ecommerce-images/category-page-02-image-card-01.jpg"
-                alt="Eight shirts arranged on table in black, olive, grey, blue, white, red, mustard, and green."
-                class="h-full w-full object-cover object-center sm:h-full sm:w-full"
-              />
-            </div>
-            <div class="flex flex-1 flex-col space-y-2 p-4">
-              <h3 class="text-sm font-medium text-gray-900">
-                <a href="#">
-                  <span aria-hidden="true" class="absolute inset-0"></span>
-                  Basic Tee 8-Pack
-                </a>
-              </h3>
-              <p class="text-sm text-gray-500">
-                Get the full lineup of our Basic Tees. Have a fresh shirt all
-                week, and an extra for laundry day.
-              </p>
-              <div class="flex flex-1 flex-col justify-end">
-                <p class="text-sm italic text-gray-500">8 colors</p>
-                <p class="text-base font-medium text-gray-900">$256</p>
-              </div>
-            </div>
-          </div>
-          <div
-            class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white"
-          >
-            <div
-              class="aspect-h-4 aspect-w-3 bg-gray-200 sm:aspect-none group-hover:opacity-75 sm:h-96"
-            >
-              <img
-                src="https://tailwindui.com/img/ecommerce-images/category-page-02-image-card-01.jpg"
-                alt="Eight shirts arranged on table in black, olive, grey, blue, white, red, mustard, and green."
-                class="h-full w-full object-cover object-center sm:h-full sm:w-full"
-              />
-            </div>
-            <div class="flex flex-1 flex-col space-y-2 p-4">
-              <h3 class="text-sm font-medium text-gray-900">
-                <a href="#">
-                  <span aria-hidden="true" class="absolute inset-0"></span>
-                  Basic Tee 8-Pack
-                </a>
-              </h3>
-              <p class="text-sm text-gray-500">
-                Get the full lineup of our Basic Tees. Have a fresh shirt all
-                week, and an extra for laundry day.
-              </p>
-              <div class="flex flex-1 flex-col justify-end">
-                <p class="text-sm italic text-gray-500">8 colors</p>
-                <p class="text-base font-medium text-gray-900">$256</p>
-              </div>
-            </div>
-          </div>
-          <div
-            class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white"
-          >
-            <div
-              class="aspect-h-4 aspect-w-3 bg-gray-200 sm:aspect-none group-hover:opacity-75 sm:h-96"
-            >
-              <img
-                src="https://tailwindui.com/img/ecommerce-images/category-page-02-image-card-02.jpg"
-                alt="Front of plain black t-shirt."
-                class="h-full w-full object-cover object-center sm:h-full sm:w-full"
-              />
-            </div>
-            <div class="flex flex-1 flex-col space-y-2 p-4">
-              <h3 class="text-sm font-medium text-gray-900">
-                <a href="#">
-                  <span aria-hidden="true" class="absolute inset-0"></span>
-                  Basic Tee
-                </a>
-              </h3>
-              <p class="text-sm text-gray-500">
-                Look like a visionary CEO and wear the same black t-shirt every
-                day.
-              </p>
-              <div class="flex flex-1 flex-col justify-end">
-                <p class="text-sm italic text-gray-500">Black</p>
-                <p class="text-base font-medium text-gray-900">$32</p>
-              </div>
             </div>
           </div>
         </div>
       </section>
+      <!-- Divider -->
+      <div class="relative">
+        <div class="absolute inset-0 flex items-center">
+          <div class="w-full border-t border-white"></div>
+        </div>
+      </div>
+      <!-- Products -->
+      <section class="max-w-2xl mx-auto px-4 md:px-6 lg:max-w-7xl lg:px-8">
+        <h2 class="py-12 text-yellow-300 text-4xl text-center font-bold">
+          Products Page
+        </h2>
+
+        <div
+          class="grid grid-cols-1 gap-x-6 gap-y-10 md:grid-cols-2 lg:grid-cols-3 lg:gap-x-8"
+        >
+          <a href="#" class="group">
+            <div
+              class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 lg:aspect-h-8 lg:aspect-w-7"
+            >
+              <img
+                src="/assets/images/philip-myrtorp-oLt9TFuDnB4-unsplash.jpg"
+                alt="Training T-Shirt"
+                class="h-96 w-full object-cover object-center group-hover:opacity-75 lg:w-96 lg:h-96"
+              />
+            </div>
+            <h3 class="mt-4 text-lg font-semibold text-center">
+              Training T-Shirt
+            </h3>
+            <p class="mt-4 text-center">Lorem Ipsum Text</p>
+          </a>
+          <a href="#" class="group">
+            <div
+              class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 lg:aspect-h-8 lg:aspect-w-7"
+            >
+              <img
+                src="/assets/images/kristian-egelund-wmdcUQ0CJ4c-unsplash.jpg"
+                alt="Nike Running Trainers."
+                class="h-96 w-full object-cover object-center group-hover:opacity-75 lg:w-96 lg:h-96"
+              />
+            </div>
+            <h3 class="mt-4 text-lg font-semibold text-center">
+              Nomad Tumbler
+            </h3>
+            <p class="mt-4 text-center">Lorem Ipsum Text</p>
+          </a>
+          <a href="#" class="group">
+            <div
+              class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 lg:aspect-h-8 lg:aspect-w-7"
+            >
+              <img
+                src="/assets/images/heather-ford-hthsAhksQ5M-unsplash.jpg"
+                alt="Person using a pen to cross a task off a productivity paper card."
+                class="h-96 w-full object-cover object-center group-hover:opacity-75 lg:w-96 lg:h-96"
+              />
+            </div>
+            <h3 class="mt-4 text-lg font-semibold text-center">
+              Focus Paper Refill
+            </h3>
+            <p class="mt-4 text-center">Lorem Ipsum Text</p>
+          </a>
+          <a href="#" class="group">
+            <div
+              class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 lg:aspect-h-8 lg:aspect-w-7"
+            >
+              <img
+                src="/assets/images/han-wei-sheng-5Lp7PJONCFw-unsplash.jpg"
+                alt="Person using a pen to cross a task off a productivity paper card."
+                class="h-96 w-full object-cover object-center group-hover:opacity-75 lg:w-96 lg:h-96"
+              />
+            </div>
+            <h3 class="mt-4 text-lg font-semibold text-center">
+              Focus Paper Refill
+            </h3>
+            <p class="mt-4 text-center">Lorem Ipsum Text</p>
+          </a>
+          <a href="#" class="group">
+            <div
+              class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 lg:aspect-h-8 lg:aspect-w-7"
+            >
+              <img
+                src="/assets/images/gabin-vallet-XUn7yMZH2yg-unsplash.jpg"
+                alt="Person using a pen to cross a task off a productivity paper card."
+                class="h-96 w-full object-cover object-center group-hover:opacity-75 lg:w-96 lg:h-96"
+              />
+            </div>
+            <h3 class="mt-4 text-lg font-semibold text-center">
+              Focus Paper Refill
+            </h3>
+            <p class="mt-4 text-center">Lorem Ipsum Text</p>
+          </a>
+          <a href="#" class="group">
+            <div
+              class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 lg:aspect-h-8 lg:aspect-w-7"
+            >
+              <img
+                src="/assets/images/element5-digital-LN3oVnuqaBk-unsplash.jpg"
+                alt="Person using a pen to cross a task off a productivity paper card."
+                class="h-96 w-full object-cover object-center group-hover:opacity-75 lg:w-96 lg:h-96"
+              />
+            </div>
+            <h3 class="mt-4 text-lg font-semibold text-center">
+              Focus Paper Refill
+            </h3>
+            <p class="mt-4 text-center">Lorem Ipsum Text</p>
+          </a>
+          <a href="#" class="group">
+            <div
+              class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 lg:aspect-h-8 lg:aspect-w-7"
+            >
+              <img
+                src="/assets/images/gabin-vallet-J154nEkpzlQ-unsplash.jpg"
+                alt="Person using a pen to cross a task off a productivity paper card."
+                class="h-96 w-full object-cover object-center group-hover:opacity-75 lg:w-96 lg:h-96"
+              />
+            </div>
+            <h3 class="mt-4 text-lg font-semibold text-center">
+              Focus Paper Refill
+            </h3>
+            <p class="mt-4 text-center">Lorem Ipsum Text</p>
+          </a>
+          <a href="#" class="group">
+            <div
+              class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 lg:aspect-h-8 lg:aspect-w-7"
+            >
+              <img
+                src="/assets/images/evan-wise-wTcD3MwL_VY-unsplash.jpg"
+                alt="Person using a pen to cross a task off a productivity paper card."
+                class="h-96 w-full object-cover object-center group-hover:opacity-75 lg:w-96 lg:h-96"
+              />
+            </div>
+            <h3 class="mt-4 text-lg font-semibold text-center">
+              Focus Paper Refill
+            </h3>
+            <p class="mt-4 text-center">Lorem Ipsum Text</p>
+          </a>
+          <a href="#" class="group">
+            <div
+              class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 lg:aspect-h-8 lg:aspect-w-7"
+            >
+              <img
+                src="/assets/images/andrew-valdivia-AB7TcT_GVU0-unsplash.jpg"
+                alt="Person using a pen to cross a task off a productivity paper card."
+                class="h-96 w-full object-cover object-center group-hover:opacity-75 lg:w-96 lg:h-96"
+              />
+            </div>
+            <h3 class="mt-4 text-lg font-semibold text-center">
+              Focus Paper Refill
+            </h3>
+            <p class="mt-4 text-center">Lorem Ipsum Text</p>
+          </a>
+          <a href="#" class="group">
+            <div
+              class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 lg:aspect-h-8 lg:aspect-w-7"
+            >
+              <img
+                src="/assets/images/charlotte-karlsen-Pz2Yhpx2ZdQ-unsplash.jpg"
+                alt="Person using a pen to cross a task off a productivity paper card."
+                class="h-96 w-full object-cover object-center group-hover:opacity-75 lg:w-96 lg:h-96"
+              />
+            </div>
+            <h3 class="mt-4 text-lg font-semibold text-center">
+              Focus Paper Refill
+            </h3>
+            <p class="mt-4 text-center">Lorem Ipsum Text</p>
+          </a>
+          <a href="#" class="group">
+            <div
+              class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 lg:aspect-h-8 lg:aspect-w-7"
+            >
+              <img
+                src="/assets/images/alina-chernysheva-JA2S6sJWleg-unsplash.jpg"
+                alt="Person using a pen to cross a task off a productivity paper card."
+                class="h-96 w-full object-cover object-center group-hover:opacity-75 lg:w-96 lg:h-96"
+              />
+            </div>
+            <h3 class="mt-4 text-lg font-semibold text-center">
+              Focus Paper Refill
+            </h3>
+            <p class="mt-4 text-center">Lorem Ipsum Text</p>
+          </a>
+          <a href="#" class="group">
+            <div
+              class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 lg:aspect-h-8 lg:aspect-w-7"
+            >
+              <img
+                src="/assets/images/ambitious-studio-rick-barrett-_IAJndivlfE-unsplash.jpg"
+                alt="Person using a pen to cross a task off a productivity paper card."
+                class="h-96 w-full object-cover object-center group-hover:opacity-75 lg:w-96 lg:h-96"
+              />
+            </div>
+            <h3 class="mt-4 text-lg font-semibold text-center">
+              Focus Paper Refill
+            </h3>
+            <p class="mt-4 text-center">Lorem Ipsum Text</p>
+          </a>
+        </div>
+      </section>
+      <!-- Testimonials -->
+      <div class="relative isolate pb-32 pt-24 md:pt-32">
+        <div
+          class="absolute inset-x-0 top-1/2 -z-10 -translate-y-1/2 transform-gpu overflow-hidden opacity-30 blur-3xl"
+        ></div>
+        <div
+          class="absolute inset-x-0 top-0 -z-10 flex transform-gpu overflow-hidden pt-32 opacity-25 blur-3xl md:pt-40 lg:justify-end"
+        ></div>
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+          <div class="max-w-xl mx-auto text-center">
+            <h2 class="text-yellow-300 text-2xl font-bold">Testimonials</h2>
+            <p class="mt-2 text-3xl font-semibold md:text-4xl">
+              We have worked with thousands of amazing people
+            </p>
+          </div>
+          <div
+            class="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm md:mt-20 md:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-flow-col lg:grid-cols-4"
+          >
+            <figure
+              class="rounded-2xl bg-yellow-300 md:col-span-2 lg:col-start-2 lg:row-end-1"
+            >
+              <blockquote
+                class="p-6 text-black text-lg font-semibold md:p-12 md:text-xl"
+              >
+                “Integer id nunc sit semper purus. Bibendum at lacus ut arcu
+                blandit montes vitae auctor libero. Hac condimentum dignissim
+                nibh vulputate ut nunc. Amet nibh orci mi venenatis blandit vel
+                et proin. Non hendrerit in vel ac diam.”
+              </blockquote>
+              <figcaption class="flex flex-wrap items-center gap-4 p-4">
+                <img
+                  class="h-10 w-10 rounded-full"
+                  src="https:/images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=1024&h=1024&q=80"
+                  alt=""
+                />
+                <div class="text-black">
+                  <span class="font-semibold">Brenna Goyette</span>
+                  <span class="block">@brennagoyette</span>
+                </div>
+              </figcaption>
+            </figure>
+            <div class="space-y-8 lg:contents lg:space-y-0">
+              <div class="space-y-8 lg:row-span-2">
+                <figure class="p-6 rounded-2xl bg-yellow-300">
+                  <blockquote class="text-black">
+                    “Laborum quis quam. Dolorum et ut quod quia. Voluptas
+                    numquam delectus nihil. Aut enim doloremque et ipsam.”
+                  </blockquote>
+                  <figcaption class="mt-6 flex items-center gap-x-4">
+                    <img
+                      class="h-10 w-10 rounded-full"
+                      src="https:/images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                      alt=""
+                    />
+                    <div class="text-black">
+                      <span class="font-bold">Leslie Alexander</span>
+                      <span class="block">@lesliealexander</span>
+                    </div>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="space-y-8 lg:row-start-1">
+                <figure class="p-6 rounded-2xl bg-yellow-300">
+                  <blockquote class="text-black">
+                    “Aut reprehenderit voluptatem eum asperiores beatae id. Iure
+                    molestiae ipsam ut officia rem nulla blanditiis.”
+                  </blockquote>
+                  <figcaption class="mt-6 flex items-center gap-x-4">
+                    <img
+                      class="h-10 w-10 rounded-full bg-gray-50"
+                      src="https:/images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                      alt=""
+                    />
+                    <div class="text-black">
+                      <span class="font-bold">Lindsay Walton</span>
+                      <span class="block">@lindsaywalton</span>
+                    </div>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="space-y-8 lg:contents lg:space-y-0">
+              <div class="space-y-8 lg:row-start-1">
+                <figure class="p-6 rounded-2xl bg-yellow-300">
+                  <blockquote class="text-black">
+                    “Voluptas quos itaque ipsam in voluptatem est. Iste eos
+                    blanditiis repudiandae. Earum deserunt enim molestiae ipsum
+                    perferendis recusandae saepe corrupti.”
+                  </blockquote>
+                  <figcaption class="mt-6 flex items-center gap-x-4">
+                    <img
+                      class="h-10 w-10 rounded-full"
+                      src="https:/images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                      alt=""
+                    />
+                    <div class="text-black">
+                      <span class="font-bold">Tom Cook</span>
+                      <span class="block">@tomcook</span>
+                    </div>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="space-y-8 lg:row-span-2">
+                <figure class="p-6 rounded-2xl bg-yellow-300">
+                  <blockquote class="text-black">
+                    “Molestias ea earum quos nostrum doloremque sed. Quaerat
+                    quasi aut velit incidunt excepturi rerum voluptatem minus
+                    harum.”
+                  </blockquote>
+                  <figcaption class="mt-6 flex items-center gap-x-4">
+                    <img
+                      class="h-10 w-10 rounded-full"
+                      src="https:/images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                      alt=""
+                    />
+                    <div class="text-black">
+                      <span class="font-bold">Leonard Krasner</span>
+                      <span class="block">@leonardkrasner</span>
+                    </div>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Divider -->
+      <div class="relative">
+        <div class="absolute inset-0 flex items-center">
+          <div class="w-full border-t border-white"></div>
+        </div>
+      </div>
+      <!-- Scroll -->
+      <button
+        onclick="topFunction()"
+        id="myBtn"
+        title="Go to top"
+        class="hidden fixed bottom-20 right-10 z-50 bg-yellow-300 hover:bg-yellow-400 font-bold py-2 px-4 rounded"
+      >
+        Top
+      </button>
     </main>
     <footer
-      class="max-w-7xl mx-auto overflow-hidden py-20 px-6 sm:py-24 lg:px-8"
+      class="max-w-7xl mx-auto overflow-hidden py-20 px-6 md:py-24 lg:px-8"
     >
       <nav
-        class="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12"
+        class="-mb-6 columns-2 md:flex md:justify-center md:space-x-12"
         aria-label="Footer"
       >
         <div class="pb-6">
@@ -533,7 +679,7 @@
         &copy; 2023 FitLab, All rights reserved.
       </p>
     </footer>
-    <script src="../dark-mode.js"></script>
-    <script src="../script.js"></script>
+    <script src="/scripts/dark-mode.js"></script>
+    <script src="/scripts/script.js"></script>
   </body>
 </html>

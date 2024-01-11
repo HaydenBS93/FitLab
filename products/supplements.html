@@ -8,12 +8,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="../src/dark-mode.css"
-      id="dark-mode-stylesheet"
-    />
-    <link rel="stylesheet" href="../src/index.css" />
+    <link rel="stylesheet" href="/src/index.css" />
   </head>
   <body class="font-sans bg-gray-100">
     <header class="bg-black border-b border-b-white sticky top-0 z-50">
@@ -21,15 +16,15 @@
         class="max-w-7xl mx-auto flex flex-row justify-between items-center p-6 space-x-4"
       >
         <a
-          href="/home.html"
-          class="py-1 px-2 text-yellow-300 text-lg rounded-lg hover:bg-white hover:text-yellow-400"
+          href="/index.html"
+          class="py-1 px-2 text-yellow-300 text-lg rounded-lg hover hover:text-yellow-400"
         >
           Home
         </a>
         <div class="relative group">
           <a
             href="/products/index.html"
-            class="py-1 px-2 text-yellow-300 text-lg rounded-lg hover:bg-white hover:text-yellow-400"
+            class="py-1 px-2 text-yellow-300 text-lg rounded-lg hover hover:text-yellow-400"
             >FitLab Products</a
           >
           <div
@@ -54,24 +49,24 @@
         </div>
         <a
           href="/about.html"
-          class="py-1 px-2 text-yellow-300 text-lg rounded-lg hover:bg-white hover:text-yellow-400"
+          class="py-1 px-2 text-yellow-300 text-lg rounded-lg hover hover:text-yellow-400"
           >About</a
         >
         <a
           href="/blog.html"
-          class="py-1 px-2 text-yellow-300 text-lg rounded-lg hover:bg-white hover:text-yellow-400"
+          class="py-1 px-2 text-yellow-300 text-lg rounded-lg hover hover:text-yellow-400"
           >Blog</a
         >
         <a
           href="/contact.html"
-          class="py-1 px-2 text-yellow-300 text-lg rounded-lg hover:bg-white hover:text-yellow-400"
+          class="py-1 px-2 text-yellow-300 text-lg rounded-lg hover hover:text-yellow-400"
           >Contact</a
         >
         <div class="flex flex-1 justify-center items-center md:justify-end">
           <a
             id="openModal"
             href="#"
-            class="md:block py-1 px-2 text-yellow-300 text-sm rounded-lg hover:bg-white hover:text-yellow-400"
+            class="md:block py-1 px-2 text-yellow-300 text-sm rounded-lg hover hover:text-yellow-400"
             >Sign up to my newsletter here! &rarr;</a
           >
         </div>
@@ -79,7 +74,7 @@
           id="newsletterModal"
           class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center z-50 hidden"
         >
-          <div class="modal bg-white p-8 rounded shadow-md w-96">
+          <div class="modal p-8 rounded shadow-md w-96">
             <h2 class="text-yellow-300 text-lg font-semibold mb-4">
               Newsletter Sign-up
             </h2>
@@ -135,11 +130,10 @@
             </button>
           </div>
         </div>
-
         <div>
           <button
             id="dark-mode-toggle"
-            class="py-1 px-2 text-white rounded-xl hover:bg-white"
+            class="py-1 px-2 text-white rounded-xl hover"
           >
             <span class="light-mode-icon rounded-full">🌞</span>
             <span class="dark-mode-icon hidden rounded-full">🌙</span>
@@ -151,269 +145,261 @@
       <section
         class="max-w-2xl mx-auto py-16 px-4 md:py-24 lg:max-w-7xl lg:px-8"
       >
-        <h1 class="p-6 text-center text-4xl">Products</h1>
+        <h1 class="p-6 text-4xl text-center">Supplements</h1>
 
         <div
-          class="grid grid-cols-1 gap-y-4 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-3 lg:gap-x-8"
+          class="grid grid-cols-1 gap-y-4 md:grid-cols-2 md:gap-x-6 md:gap-y-10 lg:grid-cols-3 lg:gap-x-8"
         >
           <div
-            class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white"
+            class="group relative flex flex-col overflow-hidden rounded-lg border border-yellow-300"
           >
             <div
-              class="aspect-h-4 aspect-w-3 bg-gray-200 sm:aspect-none group-hover:opacity-75 sm:h-96"
+              class="aspect-h-4 aspect-w-3 bg-gray-200 md:aspect-none group-hover:opacity-75 md:h-96"
             >
               <img
-                src="https://tailwindui.com/img/ecommerce-images/category-page-02-image-card-01.jpg"
-                alt="Eight shirts arranged on table in black, olive, grey, blue, white, red, mustard, and green."
-                class="h-full w-full object-cover object-center sm:h-full sm:w-full"
+                src="/assets/images/aleksander-saks-7lQ1m08Z7eE-unsplash.jpg"
+                alt=""
+                class="h-full w-full object-cover object-center md:h-full md:w-full"
               />
             </div>
             <div class="flex flex-1 flex-col space-y-2 p-4">
-              <h3 class="text-sm font-medium text-gray-900">
+              <h3 class="text-yellow-300 text-lg font-medium">
                 <a href="#">
                   <span aria-hidden="true" class="absolute inset-0"></span>
-                  Basic Tee 8-Pack
+                  Creatine Powder
                 </a>
               </h3>
-              <p class="text-sm text-gray-500">
+              <p class="text-sm text-white">
                 Get the full lineup of our Basic Tees. Have a fresh shirt all
                 week, and an extra for laundry day.
               </p>
               <div class="flex flex-1 flex-col justify-end">
-                <p class="text-sm italic text-gray-500">8 colors</p>
-                <p class="text-base font-medium text-gray-900">$256</p>
+                <p class="text-yellow-300 text-basese font-medium">£15.99</p>
               </div>
             </div>
           </div>
           <div
-            class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white"
+            class="group relative flex flex-col overflow-hidden rounded-lg border border-yellow-300"
           >
             <div
-              class="aspect-h-4 aspect-w-3 bg-gray-200 sm:aspect-none group-hover:opacity-75 sm:h-96"
+              class="aspect-h-4 aspect-w-3 bg-gray-200 md:aspect-none group-hover:opacity-75 md:h-96"
             >
               <img
-                src="https://tailwindui.com/img/ecommerce-images/category-page-02-image-card-01.jpg"
+                src="/assets/images/marwan-ahmed-J4PaQ1318C8-unsplash.jpg"
                 alt="Eight shirts arranged on table in black, olive, grey, blue, white, red, mustard, and green."
-                class="h-full w-full object-cover object-center sm:h-full sm:w-full"
+                class="h-full w-full object-cover object-center md:h-full md:w-full"
               />
             </div>
             <div class="flex flex-1 flex-col space-y-2 p-4">
-              <h3 class="text-sm font-medium text-gray-900">
+              <h3 class="text-yellow-300 text-lg font-medium">
                 <a href="#">
                   <span aria-hidden="true" class="absolute inset-0"></span>
-                  Basic Tee 8-Pack
+                  Protein Shake
                 </a>
               </h3>
-              <p class="text-sm text-gray-500">
+              <p class="text-sm text-white">
                 Get the full lineup of our Basic Tees. Have a fresh shirt all
                 week, and an extra for laundry day.
               </p>
               <div class="flex flex-1 flex-col justify-end">
-                <p class="text-sm italic text-gray-500">8 colors</p>
-                <p class="text-base font-medium text-gray-900">$256</p>
+                <p class="text-yellow-300 text-basese font-medium">£5</p>
               </div>
             </div>
           </div>
           <div
-            class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white"
+            class="group relative flex flex-col overflow-hidden rounded-lg border border-yellow-300"
           >
             <div
-              class="aspect-h-4 aspect-w-3 bg-gray-200 sm:aspect-none group-hover:opacity-75 sm:h-96"
+              class="aspect-h-4 aspect-w-3 bg-gray-200 md:aspect-none group-hover:opacity-75 md:h-96"
             >
               <img
-                src="https://tailwindui.com/img/ecommerce-images/category-page-02-image-card-01.jpg"
+                src="/assets/images/nathan-dumlao-kVv8rucgGtc-unsplash.jpg"
                 alt="Eight shirts arranged on table in black, olive, grey, blue, white, red, mustard, and green."
-                class="h-full w-full object-cover object-center sm:h-full sm:w-full"
+                class="h-full w-full object-cover object-center md:h-full md:w-full"
               />
             </div>
             <div class="flex flex-1 flex-col space-y-2 p-4">
-              <h3 class="text-sm font-medium text-gray-900">
+              <h3 class="text-yellow-300 text-lg font-medium">
                 <a href="#">
                   <span aria-hidden="true" class="absolute inset-0"></span>
-                  Basic Tee 8-Pack
+                  Zinc Tablets
                 </a>
               </h3>
-              <p class="text-sm text-gray-500">
+              <p class="text-sm text-white">
                 Get the full lineup of our Basic Tees. Have a fresh shirt all
                 week, and an extra for laundry day.
               </p>
               <div class="flex flex-1 flex-col justify-end">
-                <p class="text-sm italic text-gray-500">8 colors</p>
-                <p class="text-base font-medium text-gray-900">$256</p>
+                <p class="text-yellow-300 text-basese font-medium">£19.99</p>
               </div>
             </div>
           </div>
           <div
-            class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white"
+            class="group relative flex flex-col overflow-hidden rounded-lg border border-yellow-300"
           >
             <div
-              class="aspect-h-4 aspect-w-3 bg-gray-200 sm:aspect-none group-hover:opacity-75 sm:h-96"
+              class="aspect-h-4 aspect-w-3 bg-gray-200 md:aspect-none group-hover:opacity-75 md:h-96"
             >
               <img
-                src="https://tailwindui.com/img/ecommerce-images/category-page-02-image-card-01.jpg"
+                src="/assets/images/lyfefuel-C05u9Xh37to-unsplash.jpg"
                 alt="Eight shirts arranged on table in black, olive, grey, blue, white, red, mustard, and green."
-                class="h-full w-full object-cover object-center sm:h-full sm:w-full"
+                class="h-full w-full object-cover object-center md:h-full md:w-full"
               />
             </div>
             <div class="flex flex-1 flex-col space-y-2 p-4">
-              <h3 class="text-sm font-medium text-gray-900">
+              <h3 class="text-yellow-300 text-lg font-medium">
                 <a href="#">
                   <span aria-hidden="true" class="absolute inset-0"></span>
-                  Basic Tee 8-Pack
+                  Meal Replacement
                 </a>
               </h3>
-              <p class="text-sm text-gray-500">
+              <p class="text-sm text-white">
                 Get the full lineup of our Basic Tees. Have a fresh shirt all
                 week, and an extra for laundry day.
               </p>
               <div class="flex flex-1 flex-col justify-end">
-                <p class="text-sm italic text-gray-500">8 colors</p>
-                <p class="text-base font-medium text-gray-900">$256</p>
+                <p class="text-yellow-300 text-basese font-medium">£19.99</p>
               </div>
             </div>
           </div>
           <div
-            class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white"
+            class="group relative flex flex-col overflow-hidden rounded-lg border border-yellow-300"
           >
             <div
-              class="aspect-h-4 aspect-w-3 bg-gray-200 sm:aspect-none group-hover:opacity-75 sm:h-96"
+              class="aspect-h-4 aspect-w-3 bg-gray-200 md:aspect-none group-hover:opacity-75 md:h-96"
             >
               <img
-                src="https://tailwindui.com/img/ecommerce-images/category-page-02-image-card-01.jpg"
+                src="/assets/images/akshay-chauhan-xlTLPrpjPWM-unsplash.jpg"
                 alt="Eight shirts arranged on table in black, olive, grey, blue, white, red, mustard, and green."
-                class="h-full w-full object-cover object-center sm:h-full sm:w-full"
+                class="h-full w-full object-cover object-center md:h-full md:w-full"
               />
             </div>
             <div class="flex flex-1 flex-col space-y-2 p-4">
-              <h3 class="text-sm font-medium text-gray-900">
+              <h3 class="text-yellow-300 text-lg font-medium">
                 <a href="#">
                   <span aria-hidden="true" class="absolute inset-0"></span>
-                  Basic Tee 8-Pack
+                  Weight Loss Tablets
                 </a>
               </h3>
-              <p class="text-sm text-gray-500">
+              <p class="text-sm text-white">
                 Get the full lineup of our Basic Tees. Have a fresh shirt all
                 week, and an extra for laundry day.
               </p>
               <div class="flex flex-1 flex-col justify-end">
-                <p class="text-sm italic text-gray-500">8 colors</p>
-                <p class="text-base font-medium text-gray-900">$256</p>
+                <p class="text-yellow-300 text-basese font-medium">£29.99</p>
               </div>
             </div>
           </div>
           <div
-            class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white"
+            class="group relative flex flex-col overflow-hidden rounded-lg border border-yellow-300"
           >
             <div
-              class="aspect-h-4 aspect-w-3 bg-gray-200 sm:aspect-none group-hover:opacity-75 sm:h-96"
+              class="aspect-h-4 aspect-w-3 bg-gray-200 md:aspect-none group-hover:opacity-75 md:h-96"
             >
               <img
-                src="https://tailwindui.com/img/ecommerce-images/category-page-02-image-card-01.jpg"
+                src="/assets/images/natali-hordiiuk-n9m6cjO1tlw-unsplash.jpg"
                 alt="Eight shirts arranged on table in black, olive, grey, blue, white, red, mustard, and green."
-                class="h-full w-full object-cover object-center sm:h-full sm:w-full"
+                class="h-full w-full object-cover object-center md:h-full md:w-full"
               />
             </div>
             <div class="flex flex-1 flex-col space-y-2 p-4">
-              <h3 class="text-sm font-medium text-gray-900">
+              <h3 class="text-yellow-300 text-lg font-medium">
                 <a href="#">
                   <span aria-hidden="true" class="absolute inset-0"></span>
-                  Basic Tee 8-Pack
+                  Vitamins
                 </a>
               </h3>
-              <p class="text-sm text-gray-500">
+              <p class="text-sm text-white">
                 Get the full lineup of our Basic Tees. Have a fresh shirt all
                 week, and an extra for laundry day.
               </p>
               <div class="flex flex-1 flex-col justify-end">
-                <p class="text-sm italic text-gray-500">8 colors</p>
-                <p class="text-base font-medium text-gray-900">$256</p>
+                <p class="text-yellow-300 text-basese font-medium">£5.99</p>
               </div>
             </div>
           </div>
           <div
-            class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white"
+            class="group relative flex flex-col overflow-hidden rounded-lg border border-yellow-300"
           >
             <div
-              class="aspect-h-4 aspect-w-3 bg-gray-200 sm:aspect-none group-hover:opacity-75 sm:h-96"
+              class="aspect-h-4 aspect-w-3 bg-gray-200 md:aspect-none group-hover:opacity-75 md:h-96"
             >
               <img
-                src="https://tailwindui.com/img/ecommerce-images/category-page-02-image-card-01.jpg"
+                src="/assets/images/this-supplement-sucks-SaJILCl0zdk-unsplash.jpg"
                 alt="Eight shirts arranged on table in black, olive, grey, blue, white, red, mustard, and green."
-                class="h-full w-full object-cover object-center sm:h-full sm:w-full"
+                class="h-full w-full object-cover object-center md:h-full md:w-full"
               />
             </div>
             <div class="flex flex-1 flex-col space-y-2 p-4">
-              <h3 class="text-sm font-medium text-gray-900">
+              <h3 class="text-yellow-300 text-lg font-medium">
                 <a href="#">
                   <span aria-hidden="true" class="absolute inset-0"></span>
-                  Basic Tee 8-Pack
+                  BCAA Powder
                 </a>
               </h3>
-              <p class="text-sm text-gray-500">
+              <p class="text-sm text-white">
                 Get the full lineup of our Basic Tees. Have a fresh shirt all
                 week, and an extra for laundry day.
               </p>
               <div class="flex flex-1 flex-col justify-end">
-                <p class="text-sm italic text-gray-500">8 colors</p>
-                <p class="text-base font-medium text-gray-900">$256</p>
+                <p class="text-yellow-300 text-basese font-medium">£15.99</p>
               </div>
             </div>
           </div>
           <div
-            class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white"
+            class="group relative flex flex-col overflow-hidden rounded-lg border border-yellow-300"
           >
             <div
-              class="aspect-h-4 aspect-w-3 bg-gray-200 sm:aspect-none group-hover:opacity-75 sm:h-96"
+              class="aspect-h-4 aspect-w-3 bg-gray-200 md:aspect-none group-hover:opacity-75 md:h-96"
             >
               <img
-                src="https://tailwindui.com/img/ecommerce-images/category-page-02-image-card-01.jpg"
+                src="/assets/images/this-supplement-sucks-iqC2-ULBQv4-unsplash.jpg"
                 alt="Eight shirts arranged on table in black, olive, grey, blue, white, red, mustard, and green."
-                class="h-full w-full object-cover object-center sm:h-full sm:w-full"
+                class="h-full w-full object-cover object-center md:h-full md:w-full"
               />
             </div>
             <div class="flex flex-1 flex-col space-y-2 p-4">
-              <h3 class="text-sm font-medium text-gray-900">
+              <h3 class="text-yellow-300 text-lg font-medium">
                 <a href="#">
                   <span aria-hidden="true" class="absolute inset-0"></span>
-                  Basic Tee 8-Pack
+                  Pre-Workout
                 </a>
               </h3>
-              <p class="text-sm text-gray-500">
+              <p class="text-sm text-white">
                 Get the full lineup of our Basic Tees. Have a fresh shirt all
                 week, and an extra for laundry day.
               </p>
               <div class="flex flex-1 flex-col justify-end">
-                <p class="text-sm italic text-gray-500">8 colors</p>
-                <p class="text-base font-medium text-gray-900">$256</p>
+                <p class="text-yellow-300 text-basese font-medium">£39.99</p>
               </div>
             </div>
           </div>
           <div
-            class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white"
+            class="group relative flex flex-col overflow-hidden rounded-lg border border-yellow-300"
           >
             <div
-              class="aspect-h-4 aspect-w-3 bg-gray-200 sm:aspect-none group-hover:opacity-75 sm:h-96"
+              class="aspect-h-4 aspect-w-3 bg-gray-200 md:aspect-none group-hover:opacity-75 md:h-96"
             >
               <img
-                src="https://tailwindui.com/img/ecommerce-images/category-page-02-image-card-02.jpg"
+                src="/assets/images/this-supplement-sucks-v5_HkuVIIKw-unsplash.jpg"
                 alt="Front of plain black t-shirt."
-                class="h-full w-full object-cover object-center sm:h-full sm:w-full"
+                class="h-full w-full object-cover object-center md:h-full md:w-full"
               />
             </div>
             <div class="flex flex-1 flex-col space-y-2 p-4">
-              <h3 class="text-sm font-medium text-gray-900">
+              <h3 class="text-yellow-300 text-lg font-medium">
                 <a href="#">
                   <span aria-hidden="true" class="absolute inset-0"></span>
-                  Basic Tee
+                  Raspberry Creatine Powder - 30 Servings
                 </a>
               </h3>
-              <p class="text-sm text-gray-500">
+              <p class="text-sm text-white">
                 Look like a visionary CEO and wear the same black t-shirt every
                 day.
               </p>
               <div class="flex flex-1 flex-col justify-end">
-                <p class="text-sm italic text-gray-500">Black</p>
-                <p class="text-base font-medium text-gray-900">$32</p>
+                <p class="text-sm italic text-white">Black</p>
+                <p class="text-yellow-300 text-basese font-medium">£29.99</p>
               </div>
             </div>
           </div>
@@ -430,43 +416,43 @@
       </button>
     </main>
     <footer
-      class="max-w-7xl mx-auto overflow-hidden py-20 px-6 sm:py-24 lg:px-8"
+      class="max-w-7xl mx-auto overflow-hidden py-20 px-6 md:py-24 lg:px-8"
     >
       <nav
-        class="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12"
+        class="-mb-6 columns-2 md:flex md:justify-center md:space-x-12"
         aria-label="Footer"
       >
         <div class="pb-6">
           <a
             href="/products/index.html"
-            class="py-1 px-2 text-yellow-300 text-lg rounded-lg hover:bg-white hover:text-yellow-400"
+            class="py-1 px-2 text-yellow-300 text-lg rounded-lg hover hover:text-yellow-400"
             >FitLab Products</a
           >
         </div>
         <div class="pb-6">
           <a
             href="/about.html"
-            class="py-1 px-2 text-yellow-300 text-lg rounded-lg hover:bg-white hover:text-yellow-400"
+            class="py-1 px-2 text-yellow-300 text-lg rounded-lg hover hover:text-yellow-400"
             >About</a
           >
         </div>
         <div class="pb-6">
           <a
             href="/blog.html"
-            class="py-1 px-2 text-yellow-300 text-lg rounded-lg hover:bg-white hover:text-yellow-400"
+            class="py-1 px-2 text-yellow-300 text-lg rounded-lg hover hover:text-yellow-400"
             >Blog</a
           >
         </div>
         <div class="pb-6">
           <a
             href="/contact.html"
-            class="py-1 px-2 text-yellow-300 text-lg rounded-lg hover:bg-white hover:text-yellow-400"
+            class="py-1 px-2 text-yellow-300 text-lg rounded-lg hover hover:text-yellow-400"
             >Contact</a
           >
         </div>
       </nav>
       <div class="mt-10 flex justify-center space-x-10">
-        <a href="#" class="text-yellow-300 rounded-lg hover:bg-white">
+        <a href="#" class="text-yellow-300 rounded-lg hover">
           <span class="sr-only">Instagram</span>
           <svg
             class="h-8 w-8"
@@ -481,7 +467,7 @@
             />
           </svg>
         </a>
-        <a href="#" class="text-yellow-300 rounded-lg hover:bg-white">
+        <a href="#" class="text-yellow-300 rounded-lg hover">
           <span class="sr-only">Twitter</span>
           <svg
             class="h-8 w-8"
@@ -496,7 +482,7 @@
         </a>
         <a
           href="https://github.com/HaydenBS93"
-          class="text-yellow-300 rounded-lg hover:bg-white"
+          class="text-yellow-300 rounded-lg hover"
         >
           <span class="sr-only">GitHub</span>
           <svg
@@ -517,7 +503,7 @@
         &copy; 2023 FitLab, All rights reserved.
       </p>
     </footer>
-    <script src="../script.js"></script>
-    <script src="../dark-mode.js"></script>
+    <script src="/scripts/script.js"></script>
+    <script src="/scripts/dark-mode.js"></script>
   </body>
 </html>
