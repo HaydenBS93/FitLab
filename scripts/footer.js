@@ -2,36 +2,36 @@ const footer = document.createElement("footer");
 footer.className = "bg-black border-b border-b-white sticky top-0 z-50";
 footer.innerHTML = `
 <footer
-class="max-w-7xl mx-auto overflow-hidden py-20 px-6 sm:py-24 lg:px-8"
+class="max-w-7xl mx-auto overflow-hidden py-20 px-6 md:py-24 lg:px-8"
 >
 <nav
-  class="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12"
+  class="-mb-6 columns-2 md:flex md:justify-center md:space-x-12"
   aria-label="Footer"
 >
   <div class="pb-6">
     <a
-      href="#"
+      href="/products/index.html"
       class="py-1 px-2 text-yellow-300 text-lg rounded-lg hover:bg-white hover:text-yellow-400"
       >FitLab Products</a
     >
   </div>
   <div class="pb-6">
     <a
-      href="#"
+      href="/about.html"
       class="py-1 px-2 text-yellow-300 text-lg rounded-lg hover:bg-white hover:text-yellow-400"
       >About</a
     >
   </div>
   <div class="pb-6">
     <a
-      href="#"
+      href="/blog.html"
       class="py-1 px-2 text-yellow-300 text-lg rounded-lg hover:bg-white hover:text-yellow-400"
       >Blog</a
     >
   </div>
   <div class="pb-6">
     <a
-      href="#"
+      href="/contact.html"
       class="py-1 px-2 text-yellow-300 text-lg rounded-lg hover:bg-white hover:text-yellow-400"
       >Contact</a
     >
@@ -66,7 +66,10 @@ class="max-w-7xl mx-auto overflow-hidden py-20 px-6 sm:py-24 lg:px-8"
       />
     </svg>
   </a>
-  <a href="#" class="text-yellow-300 rounded-lg hover:bg-white">
+  <a
+    href="https://github.com/HaydenBS93"
+    class="text-yellow-300 rounded-lg hover:bg-white"
+  >
     <span class="sr-only">GitHub</span>
     <svg
       class="h-8 w-8"
@@ -82,9 +85,16 @@ class="max-w-7xl mx-auto overflow-hidden py-20 px-6 sm:py-24 lg:px-8"
     </svg>
   </a>
 </div>
-<p class="mt-10 text-center text-yellow-300 text-sm">
-  &copy; 2023 FitLab, All rights reserved.
-</p>
+<div class="mt-6 space-y-5 text-center">
+  <p class="text-yellow-300 text-md">
+    &copy; 2023 FitLab, All rights reserved.
+  </p>
+  <span class="block">
+    <a href="/privacy-policy.html" class="text-yellow-300 hover:underline"
+      >Privacy Policy</a
+    >
+  </span>
+</div>
 </footer>
 `;
 
